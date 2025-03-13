@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CMS</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My CMS</h1>
+    </header>
+
+    <main>
+        <h2>Posts</h2>
+        <div id="post-container">
+            <% posts.forEach(post => { %>
+                <div class="post">
+                    <h3><%= post.title %></h3>
+                    <p><%= post.content %></p>
+                </div>
+            <% }); %>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2025 My CMS</p>
+    </footer>
+</body>
+</html>
